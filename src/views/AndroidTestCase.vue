@@ -14,9 +14,9 @@ const platform = 1;
 </script>
 
 <template>
-  <el-button size="mini" round type="primary" @click="caseList.open()">{{
-    $t('androidTestCase.addCase')
-  }}</el-button>
+  <el-button size="mini" round type="primary" @click="caseList.open()"
+    >{{ $t('androidTestCase.addCase') }}
+  </el-button>
   <test-case-list
     ref="caseList"
     :project-id="projectId"
